@@ -1,0 +1,22 @@
+({
+    paths: {
+        jquery:   "lib/jquery",
+        boostrap: "lib/bootstrap.min",
+        usercontroller:    "modules/UserController",
+        messagecontroller:  "modules/MessageController"
+    },
+
+    shim : {
+        jquery : {
+          exports : '$'
+        },
+        boostrap:                ['jquery'],
+        messagecontroller:       ['jquery'],
+        usercontroller:          ['jquery','messagecontroller']
+    },
+
+    baseUrl : "public/js",
+    name: "main-signup",
+    out: "public/js/dist/main-signup.js",
+    removeCombined: true
+})

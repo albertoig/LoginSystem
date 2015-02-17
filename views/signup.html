@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>Register | Login System by Alberto Iglesias Gallego</title>
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap -->
+    <link href="css/own.css" rel="stylesheet"> <!-- PERSONAL FONTS -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    <div class="container">
+        <div class="row vertical-center-row">
+          <div class="col-lg-12">
+            <div class="row ">
+              <div class="col-lg-4 col-lg-offset-4 col-md-5 col-md-offset-3 col-sm-6 col-sm-offset-2 col-xs-12   col-xs-offset-0">
+                <div class="jumbotron">
+                  <h2> Register </h2>
+                  <form action="/signup" method="post">
+                    <div>
+                      <div id="messageUsername"  role="alert"></div>
+                      <label>Username:</label>
+                      <input type="text" class="form-control" placeholder="Enter your username" name="usern" id="username" />
+                    </div>
+                    <div>
+                      <div id="messageEmail" role="alert"></div>
+                      <label>Email:</label>
+                      <input type="email" class="form-control" placeholder="Enter email" name="firstEmail" id="idFirstEmail" />
+                    </div>
+                    <div>
+                      <label>Repeat Email:</label>
+                      <input type="email" class="form-control" placeholder="Repeat the email" name="secondEmail" id="idSecondEmail" />
+                    </div>
+                    <div>
+                      <label>Password</label>
+                      <input type="password" class="form-control" placeholder="Password" name="passwordEncrypt" id="inputPasswordEncrypt" />
+                    </div>
+                    <div>
+                      <label>Repeat Password</label>
+                      <input type="password" class="form-control" placeholder="Password" name="passwordConfirmationEncrypt" id="inputPasswordConfirmationEncrypt" />
+                    </div>
+                    <div style="padding-top:10px;">
+                       <button style=" width:100%;" type="submit" class="btn btn-primary">Submit</button> 
+                    </div>
+                  </form>
+                </div>                  
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/lib/require.js" data-main="js/main-signup"></script>
+  </body>
+</html>
